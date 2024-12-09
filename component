@@ -1,0 +1,32 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function Portfolio() {
+    return (
+        <div>
+            <header className="header">
+                <h1>Hiba Azzouzi</h1>
+                <p>Data Science & Neuropsychologie</p>
+            </header>
+            
+            <div className="container">
+                <section className="section">
+                    <h2>Profil</h2>
+                    <p>Étudiante en Master 1 Ingénierie de la Santé</p>
+                </section>
+                
+                <section className="section">
+                    <h2>Formation</h2>
+                    <ul>
+                        <li>Master 1 Ingénierie de la Santé</li>
+                        <li>Licence en Psychologie</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    );
+}
+
+ReactDOM.render(<Portfolio />, document.getElementById('root'));
+
+export default Portfolio;
