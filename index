@@ -1,0 +1,82 @@
+import React from 'react';
+import { User, GraduationCap, Database, Linkedin, Github, GitLab } from 'lucide-react';
+
+const HibaPortfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col">
+      <header className="bg-blue-600 text-white p-6 text-center">
+        <h1 className="text-3xl font-bold">Hiba Azzouzi</h1>
+        <p className="text-xl">Data Science & Neuropsychologie</p>
+      </header>
+      
+      <main className="container mx-auto px-4 py-8 grid md:grid-cols-2 gap-8">
+        <section className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center">
+            <User className="mr-2"/> Profil
+          </h2>
+          <p>
+            Étudiante en Master 1 Ingénierie de la Santé, spécialisée en Data Science en Santé. 
+            Titulaire d'une licence en Psychologie avec une concentration en Neuropsychologie.
+          </p>
+        </section>
+        
+        <section className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center">
+            <GraduationCap className="mr-2"/> Formation
+          </h2>
+          <div>
+            <h3 className="font-bold">Master 1 Ingénierie de la Santé</h3>
+            <p>Spécialisation : Data Science en Santé</p>
+            <h3 className="font-bold mt-2">Licence en Psychologie</h3>
+            <p>Concentration : Neuropsychologie</p>
+          </div>
+        </section>
+        
+        <section className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center">
+            <Database className="mr-2"/> Compétences Projets
+          </h2>
+          <ul className="list-disc pl-5">
+            <li>Data Management</li>
+            <li>Visualisation de Données</li>
+            <li>Création de Bases de Données</li>
+            <li>Analyse en Neuropsychologie</li>
+          </ul>
+        </section>
+        
+        <section className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-4">Réseaux Professionnels</h2>
+          <div className="flex space-x-4">
+            <a 
+              href="https://www.linkedin.com/in/azzouzi-hiba-5a5107244/" 
+              target="_blank" 
+              className="flex items-center text-blue-600 hover:text-blue-800"
+            >
+              <Linkedin className="mr-2"/> LinkedIn
+            </a>
+            <a 
+              href="https://github.com/AzzouziHiba" 
+              target="_blank" 
+              className="flex items-center text-gray-800 hover:text-black"
+            >
+              <Github className="mr-2"/> GitHub
+            </a>
+            <a 
+              href="https://gitlab.com/Hibaazzouzi" 
+              target="_blank" 
+              className="flex items-center text-orange-600 hover:text-orange-800"
+            >
+              <GitLab className="mr-2"/> GitLab
+            </a>
+          </div>
+        </section>
+      </main>
+      
+      <footer className="bg-blue-600 text-white p-4 text-center">
+        © 2024 Hiba Azzouzi - Portfolio Professionnel
+      </footer>
+    </div>
+  );
+};
+
+export default HibaPortfolio;
